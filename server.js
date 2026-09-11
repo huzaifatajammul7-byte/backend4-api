@@ -32,18 +32,12 @@ const createTable = async () => {
 };
 
 createTable();
-
 // -------------------------------------------------------------
 // CRUD ENDPOINTS
-// -------------------------------------------------------------
-
-app.get('/',(req,res)=>{
-    res.send({status:'successful',message:'Backend is working'})
-})
-
-app.post('/',(req,res)=>{
-    res.send({status:'successful',message:'Backend is working'})
-})
+// ------------------------------------------------------------
+// app.get('/',(req,res)=>{
+//     res.send({status:'successful',message:'Backend is working'})
+// })
 
 // 1. CREATE: Naya student add karna
 app.post('/api/students', async (req, res) => {
